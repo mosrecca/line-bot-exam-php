@@ -17,7 +17,6 @@
           pushMsg($arrayHeader,$arrayPostData);
        }
     }
-   echo "ถึงคิวแล้วครับ";
    function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
       $ch = curl_init();
@@ -31,5 +30,6 @@
       $result = curl_exec($ch);
       curl_close ($ch);
    }
+   echo "ถึงคิวแล้วครับ";
    exit;
 ?>
