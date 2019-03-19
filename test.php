@@ -9,7 +9,7 @@
    $message = $arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
-   if($message > 1){
+   if($message > "1"){
        for($i=1;$i<=$message;$i++){
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
